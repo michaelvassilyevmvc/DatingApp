@@ -2,14 +2,14 @@ namespace API.Errors
 {
     public class ApiException
     {
-        public ApiException(int statusCod, string message = null, string details = null)
+        public ApiException(int statusCode, string message = null, string details = null)
         {
-            StatusCod = statusCod;
+            StatusCode = statusCode;
             Message = message;
             Details = details;
         }
 
-        public int StatusCod { get; set; }
+        public int StatusCode { get; set; }
         public string Message { get; set; }
         public string Details { get; set; }
         
